@@ -1,6 +1,8 @@
 # Importing librosa.
 import librosa
 
+# Importing sys, which allows us to have access to the arguments passed in.
+import sys
 
 # Importing our audio file as filename.
 filename = '/Users/gabrielparizet/Desktop/Projet Perso/music-recognition-project/audio_files/donato_dozzy_dj_say_your_eyes.wav'
@@ -39,7 +41,14 @@ file_duration = seconds_to_minutes(duration)
 file_tempo = format_tempo(tempo)
 
 
-print(f'Your audio file tempo is of {file_tempo} bpm.')
-print(f'Your audio file is {file_duration} long.')
+# print(f'Your audio file tempo is of {file_tempo} bpm.')
+# print(f'Your audio file is {file_duration} long.')
 
+# Declaring the variable data_to_pass_back which will correspond to the data we wish to pass to JavaScript.
+data_to_pass_back = f'Your audio file tempo is of {file_tempo} bpm. ' + f'Your audio file is {file_duration} long.'
 
+input = sys.argv[1]
+output = data_to_pass_back
+print(output)
+
+sys.stdout.flush()
