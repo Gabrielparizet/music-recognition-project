@@ -39,12 +39,16 @@
 
         <main class="px-16 py-6">
             <header>
-                <h2 class="text-gray-700 text-4xl font-semibold"></h2>
-                <h3 class="text-2xl font-semibold">This is my h3</h3>
+                <!-- <h2 class="text-gray-700 text-4xl font-semibold"></h2>
+                <h3 class="text-2xl font-semibold">This is my h3</h3> -->
             </header>
 
             <div>
-                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">This Where I will put my song.</h4>
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Drag and Drop Audio Files.</h4>
+                    <div id="drop-zone" class="border-2 border-dashed border-gray-300 p-4 rounded-lg">
+                    <p class="mb-2">Drag and drop audio files here</p>
+                    <input type="file" id="file-input" accept="audio/*" multiple>
+            </div>
                 <div class="mt-8">
                 </div>
                 <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">This is where my graph will appear.</h4>
