@@ -8,12 +8,13 @@
     <title>What's My Tempo</title>
 </head>
 <body class="text-gray-500 font-mono"> 
+    <script src="javascript/javascript.js"></script>
     <div> <!-- Content wrapper -->
         <div>
             <nav>
                 <div class="flex justify-center text-gray-500 text-4xl font-semibold">
                     <h1 class="font-bold uppercase p-4 border-b border-gray-100">
-                        <a href="/" class="text-purple-500 sm:text-red-500 lg:text-yellow-400 xl:text-green-500">Sonic Mapper</a>
+                        <a href="/" class="text-purple-500 sm:text-red-500 lg:text-yellow-400 xl:text-green-500">Sound Data</a>
                     </h1>
                 </div>
                 <ul class="pl-6">
@@ -44,8 +45,8 @@
             </header>
 
             <div>
-                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Drag and Drop Audio Files.</h4>
-                    <div id="drop-zone" class="border-2 border-dashed border-gray-300 p-4 rounded-lg">
+                <h4 class="font-bold mt-12 pb-2">Drag and Drop Audio Files.</h4>
+                    <div id="drop-zone" class="border-2 border-dashed border-gray-300 p-4 rounded-lg shadow-inner">
                     <p class="mb-2">Drag and drop audio files here</p>
                     <input type="file" id="file-input" accept="audio/*" multiple>
             </div>
