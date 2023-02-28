@@ -1,7 +1,7 @@
 // To pass data from JS to Python, we are going to need a node package named "child_process".
 const spawner = require('child_process').spawn;
 
-// Here is the data we will pass to Python.
+// Here is the data we will pass to Python. STRING
 const dataToPassIn = "Send this to python script.";
 
 // console.log('Data sent to python script: ', dataToPassIn);
