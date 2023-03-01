@@ -1,8 +1,11 @@
-const audioFile = document.getElementById("input");
-// console.log(audioFile.value);
-// audioFile.addEventListener();
-  audioFile.addEventListener('change', (event) => {
-    const fileList = event.target.files;
-    console.log(fileList);
-  });
-// console.log('pathToMyAudioFile:' + audioFile.value);
+// const audioFile = document.getElementById("audio-file");
+// audioFile.addEventListener('change', (event) => {
+//   const fileList = event.target.files;
+//   console.log(fileList);
+// });
+
+function loadAudioFile(e){
+  const url = URL.createObjectURL(e.files[0]);
+  console.log(url);
+  document.getElementById("track").setAttribute("src", url);
+}
