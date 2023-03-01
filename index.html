@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tailwind/output.css">
-    <title>What's My Tempo</title>
+    <title>Sound Data</title>
 </head>
 <body class="text-gray-500 font-mono"> 
-    <script src="javascript/javascript.js"></script>
     <div> <!-- Content wrapper -->
         <div>
             <nav>
@@ -46,19 +45,33 @@
 
             <div>
                 <h4 class="font-bold mt-12 pb-2">Drag and Drop Audio Files.</h4>
-                    <div id="drop-zone" class="border-2 border-dashed border-gray-300 p-4 rounded-lg shadow-inner">
-                    <p class="mb-2">Drag and drop audio files here</p>
-                    <input type="file" id="file-input" accept="audio/*" multiple>
+                <div id="drop-zone" class="border-2 border-dashed border-gray-300 p-4 rounded-lg shadow-inner">
+                <p class="mb-2">Drag and drop audio files here</p>
+                <!-- <form action="post" enctype="multipart/form-data"> -->
+                    <!-- <div>
+                        <label for="file"></label>
+                        <input type="file" name="file" id="file"/>
+                        <button>Submit</button>
+                    </div> -->
+                <!-- </form> -->
+                <!-- <input type="file" id="audio-file" multiple> -->
+
+                <input type="file" id="audio-file" onchange="loadAudioFile(this)"><br>
+                <audio src id="track" controls>
+                </audio> 
+
+
             </div>
                 <div class="mt-8">
                 </div>
-                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">This is where my graph will appear.</h4>
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200 text-blue-800">This is where my graph will appear.</h4>
                 <div class="mt-8">
                 </div>
             </div>  
 
         </main>
     </div>
-
+    <!-- <script src="javascript/javascript.js"></script> -->
+    <script src="javascript/test.js"></script>
 </body>
 </html>

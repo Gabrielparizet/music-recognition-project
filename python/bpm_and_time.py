@@ -5,8 +5,11 @@ import librosa
 import sys
 
 # Importing our audio file as filename.
-filename = '/Users/gabrielparizet/Desktop/Projet Perso/music-recognition-project/audio_files/donato_dozzy_dj_say_your_eyes.wav'
+# filename = '/Users/gabrielparizet/Desktop/Projet Perso/music-recognition-project/audio_files/donato_dozzy_dj_say_your_eyes.wav'
 
+# With input=sys.argv[1] we import the file path given to our javascript file and attribute its value to the variable filename.
+input = sys.argv[1]
+filename = input
 
 # Load our audiofile in librosa.
 y, sr = librosa.load(filename)
@@ -47,7 +50,8 @@ file_tempo = format_tempo(tempo)
 # Declaring the variable data_to_pass_back which will correspond to the data we wish to pass to JavaScript.
 data_to_pass_back = f'Your audio file tempo is of {file_tempo} bpm. ' + f'Your audio file is {file_duration} long.'
 
-input = sys.argv[1]
+# input = sys.argv[1]
+# print("ici on est dans python", input)
 output = data_to_pass_back
 print(output)
 
